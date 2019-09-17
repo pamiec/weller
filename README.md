@@ -7,6 +7,7 @@ ________________________________________________________________________________
 Als erstes habe ich die 'getValue Funktion von redaxo'?? durch ein request ausgetauscht:
 
 $this->getValue("article_id")
+
 $_REQUEST["article_id"]
 
 
@@ -15,6 +16,7 @@ ________________________________________________________________________________
 Als zweites habe ich die 'redaxo escape befehle'?? durch ein mysql befehl ausgetauscht
 
 $sql->escape($_REQUEST["marke"]); 
+
 mysql_escape_string($_REQUEST["marke"]);
 
 __________________________________________________________________________________________
